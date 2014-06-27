@@ -1,11 +1,12 @@
 language: php
-
 php:
-  - 5.4
-  - 5.5
-
+- 5.4
+- 5.5
 before_script:
-  - composer self-update
-  - composer install --prefer-source --no-interaction --dev
-
+- composer self-update
+- composer install --prefer-source --no-interaction --dev
 script: phpunit
+env:
+  global:
+  - secure: c1NjPOvGRU/W35L4pLnjGpnPFeyPFemf6ijXe2k/Wofn+ly0OrSvHEnvERBDpKXaO8DkYVq4L/YKy6oCIOHepU9G89tJyB8Vdi2mNETsE/A0tZAjfavdn/osmu6vMrOIwR/0KJITJEHSo0qDCxYCArLeeIq7Q0Fs46K8IoeoFOM=
+  - secure: M3OUE4YQDzn9XbO7JQj+VEJhny8nMqTM186FYUzEQz60fmsyduJZRNGNUiebMZRZYyvOdVOkdegONvOXGZ4IjTfqa44VdoOE3zJ8W5UoodWVq5OZhqc+jQJe9Da0SBuFMWDvsXu5Mb2E07kA49MyY5Sd+CSSHRT+EYWbnLeIjmI=
